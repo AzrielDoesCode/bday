@@ -27,3 +27,12 @@ npm run dev
 - TypeScript
 - React
 - Tailwind CSS
+
+## GitHub Pages Deployment
+
+This project includes automated deployment to GitHub Pages via GitHub Actions:
+
+1. On GitHub, go to your repository: **Settings** → **Pages**.
+2. Under **Build and deployment** → **Source**, select **GitHub Actions**.
+3. Push to `main` or trigger the **Deploy to GitHub Pages** action under the **Actions** tab.
+4. Your site will be live at `https://<username>.github.io/<repository-name>/` (e.g. `https://azrieldoescode.github.io/bday/`) or your custom domain.

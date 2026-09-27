@@ -6,9 +6,9 @@
  * ============================================================
  */
 
-import photo1 from "@/assets/photo-1.jpg.asset.json";
-import photo2 from "@/assets/photo-2.jpg.asset.json";
-import photo3 from "@/assets/photo-3.jpg.asset.json";
+import photo1 from "@/assets/photo-1.jpg";
+import photo2 from "@/assets/photo-2.jpg";
+import photo3 from "@/assets/photo-3.jpg";
 import sticker1 from "@/assets/sticker-1-transparent.png";
 import sticker2 from "@/assets/sticker-2-transparent.png";
 import sticker3 from "@/assets/sticker-3-transparent.png";
@@ -17,9 +17,9 @@ import sticker5 from "@/assets/sticker-5-transparent.png";
 
 /** Photos — to swap one, upload a new image and replace the import above. */
 export const photos = {
-  one: photo1.url,
-  two: photo2.url,
-  three: photo3.url,
+  one: photo1,
+  two: photo2,
+  three: photo3,
 };
 
 /** Stickers (the little cartoon cut-outs). */
@@ -52,7 +52,10 @@ export const littleThings = {
 
 /** ---------- PHOTO MOMENTS (full-screen, one at a time) ---------- */
 export const photoMoments = [
-  { src: photos.three, caption: "same people. same nonsense. different couch." },
+  {
+    src: photos.three,
+    caption: "same people. same nonsense. different couch.",
+  },
 ];
 
 /** ---------- THINGS I DON'T SAY ENOUGH ---------- */
