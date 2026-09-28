@@ -213,16 +213,19 @@ export function HerLetter() {
 
   return (
     <section className="flex min-h-screen flex-col items-center justify-center px-8 py-28">
+      <PaperScrap tone="leaf" className="parallax-far left-[6%] top-[18%] h-36 w-36 -rotate-12" />
+      <PaperScrap tone="gold" className="parallax-mid bottom-[14%] right-[5%] h-28 w-48 rotate-6" />
+
       <Reveal>
         <h2 className="font-serif text-5xl italic md:text-7xl">{herLetter.heading}</h2>
         <p className="ink-hand mt-3 text-2xl md:text-3xl">{herLetter.note}</p>
       </Reveal>
 
-      <Reveal delay={160} className="mt-14">
+      <Reveal delay={160} className="mt-14 w-full max-w-3xl">
         {herLetter.src ? (
           <figure
             onClick={() => setZoom(true)}
-             className="parallax-near relative cursor-zoom-in bg-card p-5 shadow-[var(--shadow-lift)] transition-transform duration-500 hover:-translate-y-2 md:p-7"
+            className="parallax-near relative cursor-zoom-in bg-card p-5 shadow-[var(--shadow-lift)] transition-transform duration-500 hover:-translate-y-2 md:p-7"
             style={{ rotate: "-1.5deg" }}
           >
             <img
@@ -234,21 +237,19 @@ export function HerLetter() {
             <Tape className="left-1/2 top-[-12px] h-6 w-24 -translate-x-1/2 rotate-[-2deg]" />
           </figure>
         ) : (
-          /* Placeholder until the scan of her letter is added in content/ria.ts */
           <div
-            className="paper-sheet parallax-near flex h-[46vh] w-[min(44rem,84vw)] items-center justify-center px-10 text-center"
+            className="paper-sheet parallax-near relative mx-auto w-full px-8 py-16 text-center md:px-16 md:py-20"
             style={{ rotate: "-1.5deg" }}
           >
-            <p className="ink-hand text-2xl leading-relaxed text-ink-soft md:text-3xl">
-              her letter goes here —
-              <br />
-              the real one, in her handwriting.
+            <Tape className="left-1/2 top-[-14px] h-7 w-28 -translate-x-1/2 rotate-[-2deg]" />
+            <p className="ink-hand text-2xl leading-[1.85] text-ink md:text-3xl md:leading-[1.9] lg:text-4xl lg:leading-[1.9]">
+              {herLetter.text}
             </p>
           </div>
         )}
       </Reveal>
 
-      <Lightbox src={zoom ? herLetter.src : null} onClose={() => setZoom(false)} />
+      {herLetter.src && <Lightbox src={zoom ? herLetter.src : null} onClose={() => setZoom(false)} />}
     </section>
   );
 }

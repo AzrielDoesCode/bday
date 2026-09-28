@@ -41,12 +41,12 @@ export const opening = {
 
 /** ---------- THE LITTLE THINGS (polaroid wall) ---------- */
 export const littleThings = {
-  heading: "the little things",
-  note: "not the big occasions. just the ordinary days.",
+  heading: "okay, it's your birthday",
+  note: "so I suppose I have to say some nice things about you.",
   items: [
-    { src: photos.three, caption: "how did we even end up here" },
-    { src: photos.one, caption: "this was such a stupid day 😭" },
-    { src: photos.two, caption: "one of my favourite memories." },
+    { src: photos.three, caption: "how did “just hanging out” turn into this" },
+    { src: photos.one, caption: "one of my favourite versions of us." },
+    { src: photos.two, caption: "somewhere along the way, this became family." },
   ],
 };
 
@@ -54,7 +54,7 @@ export const littleThings = {
 export const photoMoments = [
   {
     src: photos.three,
-    caption: "same people. same nonsense. different couch.",
+    caption: "same people. same nonsense. all through the years.",
   },
 ];
 
@@ -65,7 +65,7 @@ export const thingsINeverSay = {
     "thank you for being there.",
     "thank you for calling me out when I need it.",
     "thank you for making things lighter.",
-    "I'm really glad life gave me a sister I didn't technically grow up with.",
+    "thank you for being my stubborn and steady support system when I really need it.",
   ],
 };
 
@@ -74,10 +74,13 @@ export const letter = {
   salutation: "Ria didi,",
   /** Each string is one paragraph. Add or remove freely. */
   paragraphs: [
-    "I'm not great at saying things out loud, so I built you a page instead. Very on brand for me, I know.",
-    "Here's the thing I keep thinking about: we didn't grow up in the same house, we didn't have to be anything to each other, and somehow you still turned into family. That feels like a small unfair piece of luck I got and didn't earn.",
-    "You're the person who tells me when I'm being ridiculous, and then stays anyway. You make the boring parts of a day feel like something worth remembering. Half the photos I like most of myself are ones where I'm laughing at something you said.",
-    "I hope this year is kind to you. I hope you get the version of your life you keep quietly working towards, and I hope you're less hard on yourself while you get there.",
+    "I guess I was really running out of fun ideas to give you a letter, so I built you a page instead. Very on brand for me, I know 😋.",
+    "I might be running out of words to express the same things, but I’d still say them every year, without a doubt.",
+    "You’re the person who tells me when I’m being ridiculous, pushes me when I need it, and somehow, through all of it, still stays. You make even the most ordinary days feel like something I’d want to remember. Somehow, some of my favourite photos of myself are the ones where I’m laughing because of something you said.",
+    "I hope this year is kind to you. I hope you find your way to the life you keep quietly working towards, even on the days you doubt yourself. And more than anything, I hope you learn to be a little less hard on yourself while you get there.",
+    "And through all of it, you’ll always have your Chhota Bhaiya right here … just a call away, and barely 10 minutes away when you need me. ",
+    "For the overthinking, the rants, the ridiculous ideas, or just a conversation that goes nowhere, we can always sit down with a nice cup of matcha, chicken momos or way too many garlic fries than we can eat, and figure it all out.",
+    "You deserve the things you’re working so hard for.",
     "Happy birthday, didi. Thanks for being mine to annoy.",
   ],
   signature: "— Dhruv",
@@ -87,10 +90,10 @@ export const letter = {
 export const herLetter = {
   heading: "you once wrote me this.",
   note: "still kept. still read sometimes.",
+  text: "“They say, ‘Blood runs thicker than water.’ This is from the Bible. But they forget how the entire saying goes. It says: ‘Blood of the covenant runs thicker than the water of the womb.”",
   /**
-   * Add the scan/photo of her handwritten letter here.
-   * Upload the image, then set: src: herLetterAsset.url
-   * While this is null, a gentle placeholder frame is shown instead.
+   * If an image scan is provided here, it shows the photo.
+   * If left null, it renders the text above in the handwritten font on a paper sheet.
    */
   src: null as string | null,
 };
@@ -99,7 +102,7 @@ export const herLetter = {
 export const finale = {
   photo: photos.one,
   title: "Happy Birthday, Ria.",
-  line: "I'm really glad you're my sister.",
+  line: "I'm really glad to have you as my sister.",
   signature: "— Dhruv",
   ps: "keep being stubborn about the life you want.",
 };
