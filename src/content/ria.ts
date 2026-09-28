@@ -35,7 +35,7 @@ export const stickers = {
 export const opening = {
   forWhom: "for Ria.",
   subtitle: "something I made for you.",
-  envelopeInitials: "R ♡ D",
+  envelopeInitials: "with dher saara pyaar, chhota bhaiya ♡",
   hint: "tap to open",
 };
 
